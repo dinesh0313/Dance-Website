@@ -1,0 +1,61 @@
+extends base.pug
+ 
+//- block script
+//-    script(src="../app.js")
+
+block style 
+    style 
+       include  ../static/style.css
+
+block content
+      nav#navbar
+        ul
+            div#logo
+                img(src="/static/logo1.png" height='100px', width='150px' padding='10000px')
+                
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+        
+      
+      script 
+        include ../static/index.js  
+      section#introSection 
+          div welcome to Royal's Dance Academy 
+          div.small  Eat Sleep Dance Repeat   
+      section#missionSection 
+           h2 Our Mission 
+           .card 
+              h3 Dance Perfection
+              .card-box 
+                  .card-img 
+                     img(src="/static/pic1.png" height='140px', alt="your internet connection is very poor")
+                  .card-contact 
+                      p this is best dance academy in universe          
+           .card 
+              h3 Dance the way you like 
+              .card-box 
+                  .card-img 
+                     img(src="/static/pic2.jpeg" height='140px', alt="your internet connection is very poor")
+                  .card-contact 
+                      p this is best dance academy in universe          
+           .card 
+              h3 Expert teaching  
+              .card-box 
+                  .card-img 
+                     img(src="/static/pic3.jpeg" height='140px', alt="your internet connection is very poor")
+                  .card-contact 
+                      p this is best dance academy in universe          
+      section#sponsorsSection 
+          h2 Ours Sponsors 
+            #sponsors 
+               img(src="/static/sp2.webp", class="spImage",alt="Sponsors Image")
+               img(src="/static/sp1.webp", class="spImage",alt="Sponsors Image")
+               img(src="/static/sp3.webp", class="spImage",alt="Sponsors Image")
+               img(src="/static/sp4.webp", class="spImage",alt="Sponsors Image")
+      footer#footer     
+        //-    &copy  2024 RoyalDanceAcademy.com | All rights reserved 
+        <p>&copy; 2024 RoyalDanceAcademy.com | All rights reserved</p>
+
