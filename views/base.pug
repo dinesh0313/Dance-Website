@@ -6,6 +6,16 @@ html
     block style 
       //- script(src='/jquery.js')
   body
-    block content
-    block foot
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/logo1.png" height='100px', width='150px' padding='10000px')
+                
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact Us]
+      block contact 
+      block foot
       
